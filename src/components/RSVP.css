@@ -99,7 +99,21 @@
 
 .rsvp-decorative {
   margin-top: 2.5rem;
-  font-size: 1.2rem;
   color: var(--primary);
   opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .rsvp-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .rsvp-card {
+    padding: 4rem 3rem;
+  }
+
+  .rsvp-form {
+    max-width: 500px;
+  }
 }

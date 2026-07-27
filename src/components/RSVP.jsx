@@ -37,7 +37,11 @@ const RSVP = () => {
           </form>
           
           <div className="rsvp-decorative">
-            <span>❦</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L14 8H10L12 2Z" stroke="currentColor" strokeWidth="1" fill="none"/>
+              <circle cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1" fill="none"/>
+              <path d="M12 16V22" stroke="currentColor" strokeWidth="1"/>
+            </svg>
           </div>
         </div>
       </div>

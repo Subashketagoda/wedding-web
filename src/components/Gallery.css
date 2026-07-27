@@ -81,3 +81,20 @@
   color: var(--primary);
   font-weight: 400;
 }
+
+@media (min-width: 768px) {
+  .gallery-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .share-love {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

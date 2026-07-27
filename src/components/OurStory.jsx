@@ -3,11 +3,11 @@ import './OurStory.css';
 
 const OurStory = () => {
   const timelineEvents = [
-    { time: '15:00', label: 'Location arrival', icon: '📍' },
-    { time: '16:00', label: 'Ceremony', icon: '⛪' },
-    { time: '17:00', label: 'Toast', icon: '🥂' },
-    { time: '18:30', label: 'Dinner', icon: '🍽️' },
-    { time: '20:00', label: 'Party', icon: '🎵' },
+    { time: '15:00', label: 'Location arrival' },
+    { time: '16:00', label: 'Ceremony' },
+    { time: '17:00', label: 'Toast' },
+    { time: '18:30', label: 'Dinner' },
+    { time: '20:00', label: 'Party' },
   ];
 
   return (
@@ -18,7 +18,7 @@ const OurStory = () => {
         <div className="timeline">
           {timelineEvents.map((event, index) => (
             <div key={index} className="timeline-item fade-in">
-              <div className="timeline-icon">{event.icon}</div>
+              <div className="timeline-icon"></div>
               <div className="timeline-line"></div>
               <div className="timeline-content">
                 <span className="timeline-time">{event.time}</span>

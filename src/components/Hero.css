@@ -137,3 +137,32 @@
     font-size: 2.6rem;
   }
 }
+
+@media (min-width: 768px) {
+  .hero-image-wrapper {
+    height: 85vh;
+  }
+
+  .hero-name-script {
+    font-size: 5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 6px;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-date-text {
+    font-size: 1.4rem;
+  }
+
+  .countdown-grid {
+    max-width: 500px;
+    gap: 1.5rem;
+  }
+
+  .countdown-item {
+    padding: 1.5rem 1rem;
+  }
+}
