@@ -1,0 +1,54 @@
+.rsvp-section {
+  background-color: var(--secondary);
+  color: var(--text-dark);
+}
+
+.rsvp-section .section-title {
+  color: var(--text-dark);
+}
+
+.rsvp-section .section-title::after {
+  background-color: var(--surface);
+}
+
+.rsvp-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--surface);
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.rsvp-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.half {
+  flex: 1;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .rsvp-container {
+    padding: 2rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
