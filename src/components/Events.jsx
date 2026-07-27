@@ -1,75 +1,60 @@
 import React from 'react';
-import { MapPin, Calendar, Clock } from 'lucide-react';
 import './Events.css';
 
 const Events = () => {
   return (
     <section id="events" className="section events-section">
-      <div className="container">
-        <h2 className="section-title">When & Where</h2>
-        
-        <div className="events-grid">
-          {/* Ceremony */}
-          <div className="event-card fade-in">
-            <div className="event-image">
-              <img src="https://images.unsplash.com/photo-1544253995-17dcad1a0173?q=80&w=2070&auto=format&fit=crop" alt="Ceremony location" />
-            </div>
-            <div className="event-details">
-              <h3>The Ceremony</h3>
-              
-              <div className="event-info">
-                <div className="info-item">
-                  <Calendar className="icon" size={20} />
-                  <span>Tuesday, December 15, 2026</span>
-                </div>
-                <div className="info-item">
-                  <Clock className="icon" size={20} />
-                  <span>3:00 PM - 4:30 PM</span>
-                </div>
-                <div className="info-item">
-                  <MapPin className="icon" size={20} />
-                  <span>St. Mary's Church<br/>Colombo 04, Sri Lanka</span>
-                </div>
-              </div>
-              
-              <p className="event-desc">
-                Join us as we exchange our vows and start our new journey together. Please arrive 15 minutes early to find a seat.
-              </p>
-              
-              <a href="#" className="btn btn-secondary">Get Directions</a>
-            </div>
-          </div>
+      <div className="events-inner">
 
-          {/* Reception */}
-          <div className="event-card fade-in">
-            <div className="event-image">
-              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop" alt="Reception location" />
-            </div>
-            <div className="event-details">
-              <h3>The Reception</h3>
-              
-              <div className="event-info">
-                <div className="info-item">
-                  <Calendar className="icon" size={20} />
-                  <span>Tuesday, December 15, 2026</span>
-                </div>
-                <div className="info-item">
-                  <Clock className="icon" size={20} />
-                  <span>6:30 PM onwards</span>
-                </div>
-                <div className="info-item">
-                  <MapPin className="icon" size={20} />
-                  <span>Shangri-La Hotel<br/>Colombo 01, Sri Lanka</span>
-                </div>
-              </div>
-              
-              <p className="event-desc">
-                Let's celebrate! Join us for dinner, drinks, and a night of dancing to celebrate our newly tied knot. Formal attire requested.
-              </p>
-              
-              <a href="#" className="btn btn-secondary">Get Directions</a>
-            </div>
+        {/* Ceremony Card */}
+        <div className="event-card fade-in">
+          <div className="event-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4L28 16H20L24 4Z" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+              <rect x="12" y="16" width="24" height="24" rx="1" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+              <path d="M20 40V28H28V40" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+              <path d="M24 16V4" stroke="currentColor" strokeWidth="1.2"/>
+              <line x1="24" y1="2" x2="24" y2="4" stroke="currentColor" strokeWidth="1.2"/>
+              <circle cx="24" cy="1.5" r="1" fill="currentColor"/>
+              <rect x="16" y="20" width="4" height="4" stroke="currentColor" strokeWidth="0.8" fill="none"/>
+              <rect x="28" y="20" width="4" height="4" stroke="currentColor" strokeWidth="0.8" fill="none"/>
+            </svg>
           </div>
+          <h3 className="event-title">Ceremony</h3>
+          <div className="event-time">16:00</div>
+          <div className="event-venue">ST. MARY'S CHURCH</div>
+          <div className="event-address">Colombo 04, Sri Lanka</div>
+          <a href="#" className="btn event-btn">View Details</a>
+        </div>
+
+        {/* Decorative separator */}
+        <div className="events-separator">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L14 8H10L12 2Z" stroke="currentColor" strokeWidth="0.8" fill="none"/>
+            <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="0.8" fill="none"/>
+            <path d="M12 16V22" stroke="currentColor" strokeWidth="0.8"/>
+          </svg>
+        </div>
+
+        {/* Reception Card */}
+        <div className="event-card fade-in">
+          <div className="event-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 32C16 24 20 20 24 18C28 20 32 24 32 32" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+              <line x1="24" y1="32" x2="24" y2="40" stroke="currentColor" strokeWidth="1.2"/>
+              <line x1="20" y1="40" x2="28" y2="40" stroke="currentColor" strokeWidth="1.2"/>
+              <path d="M14 32C14 22 18 16 24 14C30 16 34 22 34 32" stroke="currentColor" strokeWidth="0.6" fill="none" strokeDasharray="2 2"/>
+              <circle cx="18" cy="14" r="2" stroke="currentColor" strokeWidth="0.8" fill="none"/>
+              <circle cx="30" cy="14" r="2" stroke="currentColor" strokeWidth="0.8" fill="none"/>
+              <path d="M19 12L21 8" stroke="currentColor" strokeWidth="0.8"/>
+              <path d="M29 12L27 8" stroke="currentColor" strokeWidth="0.8"/>
+            </svg>
+          </div>
+          <h3 className="event-title">Reception</h3>
+          <div className="event-time">18:30</div>
+          <div className="event-venue">SHANGRI-LA HOTEL</div>
+          <div className="event-address">Colombo 01, Sri Lanka</div>
+          <a href="#" className="btn event-btn">View Details</a>
         </div>
       </div>
     </section>

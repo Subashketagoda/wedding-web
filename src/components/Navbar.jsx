@@ -7,13 +7,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -24,11 +19,7 @@ const Navbar = () => {
 
   return (
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="navbar-container container">
-        <div className="navbar-logo">
-          <a href="#">Y & T</a>
-        </div>
-        
+      <div className="navbar-inner">
         <div className={`navbar-mobile-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
           <span></span>
           <span></span>
@@ -37,7 +28,7 @@ const Navbar = () => {
 
         <nav className={`navbar-links ${isMobileMenuOpen ? 'open' : ''}`}>
           <a href="#hero" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
-          <a href="#story" onClick={() => setIsMobileMenuOpen(false)}>Our Story</a>
+          <a href="#story" onClick={() => setIsMobileMenuOpen(false)}>Story</a>
           <a href="#events" onClick={() => setIsMobileMenuOpen(false)}>Events</a>
           <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)}>Gallery</a>
           <a href="#rsvp" onClick={() => setIsMobileMenuOpen(false)}>RSVP</a>

@@ -4,21 +4,12 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container footer-content">
-        <h2 className="footer-title">Yohaan & Tanya</h2>
-        <p className="footer-date">December 15, 2026</p>
-        <p className="footer-hashtag">#YohaanAndTanyaSayIzy</p>
-        
-        <div className="footer-links">
-          <a href="#hero">Home</a>
-          <a href="#story">Our Story</a>
-          <a href="#events">Events</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#rsvp">RSVP</a>
-        </div>
-        
-        <div className="footer-copy">
-          &copy; {new Date().getFullYear()} Yohaan & Tanya. All Rights Reserved.
+      <div className="footer-inner fade-in">
+        <h2 className="footer-initials">Y & T</h2>
+        <p className="footer-date">15 . 12 . 2026</p>
+        <p className="footer-thanks">Thank you for being part of our story.</p>
+        <div className="footer-copyright">
+          &copy; {new Date().getFullYear()} Yohaan & Tanya. All rights reserved.
         </div>
       </div>
     </footer>

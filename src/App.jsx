@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import OurStory from './components/OurStory'
@@ -9,7 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <div className="app-wrapper">
       <Navbar />
       <main>
         <Hero />
@@ -19,7 +20,7 @@ function App() {
         <RSVP />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
